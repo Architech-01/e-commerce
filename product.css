@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+
+#product-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+#product-main-left{
+    height: 100%;
+    width: 100%;
+    flex: 0.55;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+#product-main-right{
+    height: 100%;
+    flex: 0.45;
+    padding: 20px;
+    
+}
+
+.image-container{ 
+    height: 500px;
+           
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#star-text{
+    width: 100%;
+}
+#product-title{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+#breadcrumps{
+    font-size: 12px;
+    color: #00000094;
+}
+
+#description{
+    color: #00000094;
+}
+
+.star img{
+    width: 12px;
+    height: 12px;
+}
+
+#star-container{
+    display: flex;
+    
+}
+
+#review-container{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+#review-count{
+    font-size: 12px;
+    color: #00000094;
+}
+
+#price-container{
+    display: flex;
+    align-items: center;
+}
+
+#discount{
+    font-size: 25px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+#price{
+    font-size: 12px;
+    text-decoration: line-through;
+
+}
+
+.option-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-bottom: 1px solid #cec7c7;
+}
+
+.option-title{
+    font-weight: 700;
+}
+
+#qty-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #dfd2d2;
+    margin: 20px 0px;
+    padding: 10px ;
+} 
+
+#qty-container button{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#add-to-cart-btn{
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    color: #ffffff;
+    border: 0;
+}
+
+.text{
+    display: flex;
+    gap: 20px;
+    margin: 10px 0px;
+}
+
+.text-action{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#Additional-Options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    margin: 20px 0px;
+}
+
+#Additional-Options p{
+    font-size: 12px;
+    color: #00000094;
+}
+
+@media only screen and  (max-width:900px) {
+    
+    #product-main{
+        flex-direction: column;
+    }
+}
+
+@media only screen and  (max-width :500px) {
+    .image-container{
+        height: 300px;
+    }
+}
+
